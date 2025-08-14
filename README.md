@@ -1,20 +1,63 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 📱 Frontend Assignment – Infinite Scrolling Feed
 
-## Get started
+A simple mobile UI built with **React Native** and **Expo** that demonstrates **infinite scrolling**, smooth performance, and search functionality using a large static JSON dataset.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🎯 Goal
+To build a **responsive**, **smooth**, and **optimized** infinite scrolling feed that supports **local search** without excessive network calls.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## ✨ Features
+- ♾ **Infinite Scroll** – Auto-loads more posts as the user scrolls.  
+- 🔍 **Search Bar** – Full-text search across all post titles and descriptions.  
+- ⚡ **Performance Optimized** – Uses `FlatList` optimizations (`getItemLayout`, `initialNumToRender`, etc.).  
+- 📂 **Offline Data Simulation** – Uses a large static JSON file to simulate posts.  
+
+---
+
+## 🛠 Tech Stack
+- **Framework:** React Native + Expo  
+- **Language:** TypeScript  
+- **UI:** Styled Components  
+- **Data:** Local static JSON file  
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+1️⃣ Clone the repository
+git clone https://github.com/Anukeerth-ek/Infinite_Scroll_React_Native.git
+cd Infinite_Scroll_React_Native
+
+
+2️⃣ Install dependencies
+
+npm install
+or
+yarn install
+
+
+3️⃣ Start the project
+
+
+npm start
+or
+
+yarn start
+📱 Running on Device / Emulator
+Press a → Open in Android Emulator
+
+Press i → Open in iOS Simulator (Mac only)
+
+📷 Scan the QR code in Expo DevTools using the Expo Go app on your phone
+
+
+
+Assignment Flow
 
 [posts.json]
      ↓ (data load)
@@ -25,35 +68,4 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
         PostCard (renders one post)
 
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
