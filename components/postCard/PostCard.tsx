@@ -10,10 +10,7 @@ const Card = styled(View)`
      border-radius: 12px;
      overflow: hidden;
      elevation: 4;
-     shadow-color: #000;
-     shadow-opacity: 0.2;
-     shadow-radius: 4px;
-     shadow-offset: 0px 2px;
+ 
 `;
 
 const PostImage = styled(Image)`
@@ -45,7 +42,7 @@ function PostCardComponent({ id, title, description, image }: PostCardProps) {
                     }}
                     resizeMode="cover"
                />
-               <Title>{title}</Title>
+               <Title numberOfLines={1} ellipsizeMode="tail">{title}</Title>
                <Description numberOfLines={2} ellipsizeMode="tail">
                     {description}
                </Description>
@@ -53,4 +50,12 @@ function PostCardComponent({ id, title, description, image }: PostCardProps) {
      );
 }
 
-export const PostCard = React.memo(PostCardComponent);
+export const PostCard = React.memo(
+  PostCardComponent,
+  (prev, next) =>
+    prev.id === next.id &&
+    prev.title === next.title &&
+    prev.description === next.description &&
+    prev.image === next.image &&
+    prev.posted_date === next.posted_date
+);
