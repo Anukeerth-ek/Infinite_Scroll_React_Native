@@ -16,6 +16,15 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
+[posts.json]
+     ↓ (data load)
+[FeedScreen]
+     → SearchBar (for text input)
+     → FlatList (renders list of PostCards)
+             ↓
+        PostCard (renders one post)
+
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
